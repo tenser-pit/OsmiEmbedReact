@@ -8,12 +8,19 @@ const extensions = ['.js', '.jsx', '.ts', '.tsx', '.json']
 
 const indexConfig = {
   input: "./src/index.ts",
-  output: {
-    file: "./dist/index.js",
-    format: "es",
-    inlineDynamicImports: true,
-  },
-  external: ["react", "react/jsx-runtime", "flowise-embed"],
+  output: [
+    {
+      file: "./dist/index.js",
+      format: "cjs",
+      inlineDynamicImports: true,
+    },
+    {
+      file: "./dist/index.esm.js",
+      format: "es",
+      inlineDynamicImports: true,
+    }
+  ],
+  external: ["react", "react/jsx-runtime", "flowise-embed", "osmi-ai-embed"],
   plugins: [
     resolve({ extensions }),
     babel({
