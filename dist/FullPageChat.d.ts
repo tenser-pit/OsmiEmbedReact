@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import type { BotProps } from 'flowise-embed';
+import type { BotProps } from 'osmi-ai-embed';
 type Props = BotProps & {
     style?: React.CSSProperties;
     className?: string;

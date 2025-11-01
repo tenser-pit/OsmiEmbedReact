@@ -1,6 +1,4 @@
 /// <reference types="react" />
-import type { BubbleProps } from 'flowise-embed';
-type Props = BubbleProps;
 declare global {
     namespace JSX {
         interface IntrinsicElements {
@@ -8,6 +6,5 @@ declare global {
         }
     }
 }
-export declare const BubbleChat: (props: Props) => null;
-export {};
+export declare const BubbleChat: (props: BubbleProps) => null;
 //# sourceMappingURL=BubbleChat.d.ts.map

@@ -20,7 +20,7 @@ const indexConfig = {
       inlineDynamicImports: true,
     }
   ],
-  external: ["react", "react/jsx-runtime", "flowise-embed", "osmi-ai-embed"],
+  external: ["react", "react/jsx-runtime", "osmi-ai-embed"],
   plugins: [
     resolve({ extensions }),
     babel({
